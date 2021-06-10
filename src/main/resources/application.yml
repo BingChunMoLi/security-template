@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///test?serverTimezone=UTC
+    username: root
+    password:
+jwt:
+  # jwt\u8BF7\u6C42\u5934
+  header: Authorization
+  # jwt \u524D\u7F00
+  token-start: Bearer
+  # jwt\u5BC6\u94A5
+  secret: VG10c05WTnFXa3BPYTI4eVYxWmtOQT09
+  # 令牌有效期
+  expireTime: 30
+  # 签发者
+  iss: MoLi
+
+server:
+  port: 10000
